@@ -1,5 +1,5 @@
 import type Mithril from 'mithril';
-export type Placement = 'start_top' | 'start_bottom' | 'end' | 'top' | 'bottom';
+export type Placement = 'start_top' | 'start_bottom' | 'end' | 'top' | 'bottom' | 'floating';
 export type Widget = {
     id?: string;
     key: string;
