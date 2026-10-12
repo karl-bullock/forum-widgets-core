@@ -12,6 +12,9 @@ import Component from 'flarum/common/Component';
  */
 export default class FloatingWidgetSection extends Component {
     open: boolean;
+    toggleButton?: HTMLElement;
+    onkeydown: (e: KeyboardEvent) => void;
+    oncreate(vnode: Mithril.VnodeDOM<{}, this>): void;
     onremove(vnode: Mithril.VnodeDOM<{}, this>): void;
     setOpen(open: boolean): void;
     view(): Mithril.Children;
